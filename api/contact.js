@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       service: 'gmail',
       auth: {
         user: 'dilemagdaweb@gmail.com',
-        pass: 'Tulov izpg owtu hifg', 
+        pass: 'Tulovizpgowtuhifg', 
       },
     });
 
