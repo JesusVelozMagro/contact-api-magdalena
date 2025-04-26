@@ -1,0 +1,10 @@
+{
+  "name": "contact-api",
+  "version": "1.0.0",
+  "description": "API para enviar correos desde el formulario de contacto",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  }
+}
