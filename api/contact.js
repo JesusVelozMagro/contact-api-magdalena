@@ -1,7 +1,13 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-  const allowedOrigins = ['https://tusitioweb.cl', 'http://localhost:3000'];
+  const allowedOrigins = [
+    'https://tusitioweb.cl',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+    'http://localhost:5500',
+    'http://127.0.0.1:5500'
+  ];
   const origin = req.headers.origin;
 
   if (allowedOrigins.includes(origin)) {
