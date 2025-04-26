@@ -24,7 +24,9 @@ export default async function handler(req, res) {
     const { name, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+        host: 'smtp.gmail.com',
+        port: 465,        // Puerto SSL seguro
+        secure: true,     // true para 465, false para 587
       auth: {
         user: 'dilemagdaweb@gmail.com',
         pass: 'drvk qiix urky klkt', 
